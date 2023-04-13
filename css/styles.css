@@ -216,16 +216,13 @@ body {
 
 /* icons */
 .about-icon {
+  display: flex;
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
-  align-items: center;
-  margin: 24 100;
-  justify-content: center;
+  justify-content: center; 
 }
-.strategy::before {
-  
-}
+
 /**
   |============================
   | button
