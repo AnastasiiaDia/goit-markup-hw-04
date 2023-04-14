@@ -15,7 +15,7 @@ body {
 
 } 
 .link {
-  text-decoration: none;
+  text-decoration: none;  
 }
 /**
   |============================
@@ -345,39 +345,65 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   text-transform: capitalize;
   color: var(--main-header-color);
 }
-.team-sm-container {
-  margin-top: 8px;
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-  }
-/* .team-sm-list {
-  display: flex;
+/* .team-sm-container {
+  
+  } */
+.team-sm-list {
   width: 232px;
+  height: 40px;
+  margin-top: 8px; 
+  display: flex;  
   gap: 24px;
-} */
-.team-sm-link {
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-sm-link { 
   width: 40px;
   height: 40px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
 }
-.team-smm-icon {
-  width: 16px;
-  height: 16px;
-  background-size: 40px 40px;
-  border-radius: 50%;
-  background-color: var(--primary-brand-color);
+.team-sm-link:hover,
+.team-sm-link:focus {
+  background-color: #404bbf;
+    
 }
+/**
+  |============================
+  | Customers
+  |============================
+*/
 
-.team-wrapper::after {
+.customers-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.list {
+}
+.customers-item {
+}
+.customers-link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+}
+.customers-icon { 
+fill: #8E8F99;
+}
+/* .team-wrapper::after {
   content: "";
   display: flex;
   width: 24px;
   height: 24px;
-}
+} */
 .list-of-sm {
   display: flex;
 }
@@ -467,7 +493,7 @@ button {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-.customers-lis {  
+.customers-list {  
 display: flex;
 gap: 24;
 
@@ -475,4 +501,35 @@ gap: 24;
 .footer.footer-content.logo {
   padding-top: 0;
   padding-bottom: 0;
+  
+}
+.footer-content {
+  display: flex;
+  gap: 120px;
+  align-items:baseline;
+
+}
+.footer-title-sm {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--white-background-color);
+}
+.footer-right-side {
+display: inline-block;
+flex-wrap: wrap;
+}
+.footer-sm-list {
+  width: 232px;
+  height: 40px;
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-right-side a:hover,
+.footer-right-side a:focus {
+  background-color: #31D0AA;
 }
