@@ -231,9 +231,9 @@ body {
   height: 112px;
   background-color: #f4f4fd;
   justify-content: center; 
-  padding-top: 24px;
   border-radius: 4px; 
   margin-bottom: 8px;
+  align-items: center;
 }
 
 /**
