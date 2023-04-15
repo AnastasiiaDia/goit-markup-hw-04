@@ -11,6 +11,7 @@ body {
   --pressed-state-color: #404bbf;
   --white-background-color: #ffffff;
   --button-border-color:#e7e9fc;
+  --customers-icon-color: #8E8F99;
   /* Others */
 
 } 
@@ -410,10 +411,11 @@ align-items: center;
 justify-content: center;
 width: 168px;
 height: 88px;
-border: 1px solid #8E8F99;
+border: 1px solid var(--customers-icon-color);
 border-radius: 4px;
-color: var() #afb1b8;
+color: var()
 }
+
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--pressed-state-color);
@@ -424,8 +426,7 @@ color: var() #afb1b8;
   fill: var(--pressed-state-color);
 }
 .customers-icon { 
-fill: #8E8F99;
-
+fill: currentColor;
 }
 /* .team-wrapper::after {
   content: "";
@@ -494,14 +495,15 @@ button {
     border: 1px solid var(--button-border-color);
     border-top: none; 
   }
- .card-set-link:hover,
- .card-set-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
- }
- .card-set-item:hover,
- .card-set-item:focus {
+  .card-set-link {
+    display:block;
+  }
+    
+  .card-set-link:hover,
+  .card-set-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
