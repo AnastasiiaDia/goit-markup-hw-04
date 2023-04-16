@@ -90,7 +90,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-header-color);
   display: inline-block;
-  margin-right: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -280,6 +279,9 @@ border-radius: 4px;
 .works-list-container {
   display: flex;
   gap: 24px;
+}
+.section-works {
+  padding-bottom: 120px;
 }
 .header-main-page {
   font-weight: 700;
