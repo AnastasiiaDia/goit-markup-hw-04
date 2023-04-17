@@ -23,6 +23,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;}
+  .section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
 /**
   |============================
   |HEADER
@@ -128,7 +132,7 @@ body {
 }
 /**
   |============================
-  |   HERO FIRSR SECSION
+  | 1  HERO FIRSR SECSION
   |============================
 */
 .hero {
@@ -187,7 +191,7 @@ body {
 
 /**
   |============================
-  | ABOUT   SECOND SECSION
+  |2 ABOUT   SECOND SECSION
   |============================
 */
 .about-container {
@@ -273,7 +277,7 @@ border-radius: 4px;
 
 /**
   |============================
-  | works
+  |3 works
   |============================
 */
 .works-list-container {
@@ -294,40 +298,10 @@ border-radius: 4px;
   /* NAVY BLUE */
   color: var(--main-header-color);
 }
-/**
-  |============================
-  | FOOTER
-  |============================
-*/
 
-.footer {
-  background-color: var(--main-header-color);
-  padding: 100px 0;
-}
-.logo-light {
-  color: var(--light);
-}
-.footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--light);
-}
-.footer--content {
-   padding: 100px 0;  
-}
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
-  padding: 0;
-}
-.footer-text {
-  max-width: 264px;
-}
 /**
   |============================
-  | our team
+  |4 our team
   |============================
 */
 .our-team {
@@ -394,7 +368,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 /**
   |============================
-  | Customers
+  | 5 Customers
   |============================
 */
 
@@ -417,7 +391,10 @@ border: 1px solid var(--customers-icon-color);
 border-radius: 4px;
 color: var(--customers-icon-color)
 }
-
+.customers-list {  
+  display: flex;
+  gap: 24;
+  }
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--pressed-state-color);
@@ -439,6 +416,73 @@ fill: currentColor;
 .list-of-sm {
   display: flex;
 }
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+
+.footer {
+  background-color: var(--main-header-color);
+  padding: 100px 0;
+}
+.logo-light {
+  color: var(--light);
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light);
+}
+.footer--content {
+   padding: 100px 0;  
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.footer-text {
+  max-width: 264px;
+}
+.footer.footer-content.logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+.footer-content {
+  display: flex;
+  gap: 120px;
+  align-items: baseline;
+
+}
+.footer-title-sm {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--white-background-color);
+margin-bottom: 16px;
+}
+.footer-right-side {
+display: inline-block;
+flex-wrap: wrap;
+}
+.footer-sm-list {
+  width: 232px;
+  height: 40px;  
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-right-side a:hover,
+.footer-right-side a:focus {
+  background-color: #31D0AA;
+}
+                                                                                                                                  
 /**
   |============================
   | reset start
@@ -472,7 +516,7 @@ button {
 
  /**
     |============================
-    | Card set
+    | Portfolio Card set
     |============================
   */
   .card-set {
@@ -524,49 +568,6 @@ button {
     | outline: 2px solid orange;
     |============================
   */
-  
 
-.section {
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
-.customers-list {  
-display: flex;
-gap: 24;
 
-}
-.footer.footer-content.logo {
-  padding-top: 0;
-  padding-bottom: 0;
-  
-}
-.footer-content {
-  display: flex;
-  gap: 120px;
-  align-items: baseline;
 
-}
-.footer-title-sm {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--white-background-color);
-margin-bottom: 16px;
-}
-.footer-right-side {
-display: inline-block;
-flex-wrap: wrap;
-}
-.footer-sm-list {
-  width: 232px;
-  height: 40px;  
-  display: flex;
-  gap: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer-right-side a:hover,
-.footer-right-side a:focus {
-  background-color: #31D0AA;
-}
